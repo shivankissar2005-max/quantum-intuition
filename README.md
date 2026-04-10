@@ -1,28 +1,60 @@
 # Quantum Computing — Intuition & Circuits
 
-This project documents my process of learning quantum computing using Qiskit.
+> Learning quantum computing by building, predicting, and experimenting with circuits in Qiskit.
 
-Instead of focusing on theory, I focus on:
-- Predicting outputs
-- Running experiments
-- Explaining results
+---
 
-## Key Concepts Explored
+## Purpose
 
-- Single-qubit randomness (H gate)
-- Deterministic flips (X gate)
-- Independence vs entanglement
-- Bell states
-- GHZ states
-- Breaking entanglement
-- Gate order effects
+This project documents my process of developing intuition for quantum computing through hands-on experiments.
 
-## Approach
+Instead of focusing on theory, I use a simple approach:
+- Predict what a circuit will do  
+- Run the circuit  
+- Compare the result  
+- Explain what happened  
 
-For each experiment:
-1. Predict the outcome
-2. Run the circuit
-3. Compare results
-4. Explain what happened
+---
 
-Goal: build intuition, not just follow tutorials.
+## What I Learned
+
+- How the **X gate** creates deterministic behavior  
+- How the **H gate** creates randomness  
+- The difference between **independent qubits** and **entangled qubits**  
+- How to build **Bell states** and **GHZ states**  
+- How entanglement can be **created, modified, and broken**  
+- How the **order of gates affects outcomes**  
+
+---
+
+## Project Structure
+
+- `experiments/` — Python files for each circuit experiment  
+- `notes/experiment_log.md` — predictions, results, and explanations  
+
+---
+
+## Example Insight
+
+In one experiment, I created a GHZ state and then partially broke it by changing the order of gates.
+
+**Result:**
+- Outputs: `000` and `101`
+
+**Insight:**
+- Entanglement is not just about which gates are used, but also when they are applied.
+- Changing the order of operations changes which qubits remain correlated.
+
+---
+
+## Tools Used
+
+- Python  
+- Qiskit  
+- Qiskit Aer  
+
+---
+
+## Goal
+
+Build intuition, not just follow tutorials.
